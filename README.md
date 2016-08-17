@@ -1,2 +1,2 @@
 # 360-camera
-Us you smart phone and a stepper motor to make 360 google earth pics
+Use you smart phone and a stepper motor and google street view app to create 360 photos
