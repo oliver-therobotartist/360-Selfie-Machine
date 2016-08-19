@@ -1,2 +1,2 @@
 # 360-camera
-Use you smart phone and a stepper motor and google street view app to create 360 photos
+Use google street view app on your smart phone and a simple stepper motor control to create 360 photos anywhere, faster.  
