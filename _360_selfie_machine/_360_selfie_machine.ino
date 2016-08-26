@@ -30,14 +30,19 @@ void setup(){
 
 void loop(){
   //this loop takes one photo and will need to repeat 13 times
-  for(int spin = 0; spin < 29; spin++)//there are 13 photos taken 400 steps per rev / 13 phots = ~30 steps.  29 steps works better. 
+  for(int photo = 0; photo < 13; photo++)
   {
-    digitalWrite(STEP, HIGH);
-    delay(3);
-    digitalWrite(STEP, LOW);
-    delay(3);//this total delay time works at limiting the amount of vibration. 
+    for(int spin = 0; spin < 29; spin++)//there are 13 photos taken 400 steps per rev / 13 phots = ~30 steps.  29 steps works better. 
+    {
+      digitalWrite(STEP, HIGH);
+      delay(3);
+      digitalWrite(STEP, LOW);
+      delay(3);//this total delay time works at limiting the amount of vibration. 
+    }
+    delay(1500);//time needed for app to take photo
   }
-  
-  delay(1500);//time needed for app to take photo
+  //Disable motor
+  digitalWrite(ENABLE, HIGH);
+  //press the reset button to start over
 }
 
